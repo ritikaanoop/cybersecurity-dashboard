@@ -1,23 +1,31 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import './App.css'; 
+import Header from './components/Header'; 
+import AlertsTable from './components/AlertsTable'; 
+import DataVisualization from './components/DataVisualization'; 
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Header />
+      <div className="main-content">
+        <div className="sidebar">
+          <nav>
+            <h2>Welcome! Stay secure and informed.</h2>
+            <ul>
+              <li>Overview</li>
+              <li>Issues</li>
+              <li>Files</li>
+              <li>Threat Details</li>
+              <li>Threats</li>
+            </ul>
+          </nav>
+        </div>
+        <div className="content">
+          <DataVisualization /> 
+          <AlertsTable />
+        </div>
+      </div>
     </div>
   );
 }

@@ -1,0 +1,17 @@
+.alerts-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.alerts-table th, .alerts-table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+.alerts-table th {
+  background-color: #3E50B4;
+  color: white;
+}
+
+
+
